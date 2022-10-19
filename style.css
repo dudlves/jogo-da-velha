@@ -5,10 +5,32 @@ html {
 body {
     height: 100%;
     padding: 0;
-    margin: 0;
+    margin: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: #242422;
+
+}
+
+header{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(228, 220, 220);
+    background-color: black;
+    border-radius: 25px;
+    margin: 15px auto;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: black;
+   margin-left: auto;
+   margin-right: auto ;
+   height: 500px;
 }
 
 #tabuleiro {
@@ -16,12 +38,15 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     width: 420px;
     height: 420px;
-    gap: 3px;
+    gap: 4px;
     background-color: #860d01;
+   
 }
 
 #tabuleiro button{
     border: none;
     font-size: 50px;
-    background-color: #fffe9d;
+    /* background-color:#FFF067; */
+    background-color: black;
+    color: #860d01;
 }
