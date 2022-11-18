@@ -6,9 +6,12 @@ buttons.forEach(function(i){
 })
 
 function botaoClicado(evt){
-    evt.target.innerHTML = jogadorDaVez
-    vezDoJogador()
-
+    if(evt.target.innerHTML == ""){
+        evt.target.innerHTML = jogadorDaVez
+    }else {
+        return
+    }
+    vezDoJogadores()
 }
 
 let jogadorDaVez = "X"
@@ -21,13 +24,15 @@ function vezDoJogadores (evt){
     }
 }
 
-function ganhador (buttons){
+function ganhador (){
     let posicao = [
         [a1, a2, a3],
         [b1, b2, b3],
         [c1, c2, c3],
+        [a1, b1, c1],
+        [a2, b2, c2],
+        [a3, b3, c3],
         [a1, b2, c3]
-
     ]
 }
 console.log(buttons)
